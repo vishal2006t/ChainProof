@@ -1,0 +1,24 @@
+{
+  "name": "chainproof",
+  "version": "1.0.0",
+  "description": "ChainProof: Blockchain-Based Certificate Verification System",
+  "private": true,
+  "scripts": {
+    "test:contracts": "cd blockchain && npx hardhat test",
+    "test:backend": "cd backend && npm test",
+    "test:e2e": "cd blockchain && npx hardhat run scripts/test-e2e.js",
+    "test:integration": "node scripts/test-live-integration.js",
+    "test:generator": "node scripts/test-certificate-generator.js",
+    "test:all": "npm run test:contracts && npm run test:backend && npm run test:e2e && npm run test:integration && npm run test:generator",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build:all": "npm run build:backend && npm run build:frontend",
+    "blockchain:node": "cd blockchain && npx hardhat node",
+    "blockchain:deploy": "cd blockchain && npx hardhat run scripts/deploy.js --network localhost",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm run dev"
+  },
+  "keywords": ["blockchain", "solidity", "hardhat", "certificate-verification", "sha256", "cybersecurity"],
+  "author": "ChainProof Team",
+  "license": "MIT"
+}

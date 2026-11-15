@@ -1,0 +1,44 @@
+# Node dependencies
+node_modules/
+*/node_modules/
+
+# Build artifacts
+dist/
+*/dist/
+blockchain/artifacts/
+blockchain/cache/
+
+# Environment files and secrets
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+*.pem
+*.key
+
+# SQLite Database & Write-Ahead Logs
+*.db
+*.db-shm
+*.db-wal
+backend/chainproof.db*
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Antigravity task/brain cache
+.system_generated/
